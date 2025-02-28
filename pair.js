@@ -57,17 +57,14 @@ router.get('/', async (req, res) => {
              //  let session = await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: 'MAKINO-MD-V2;;;' + b64data });
                let session = await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: data });
 
-                 let SIGMA_MD_TEXT = 
-    *_Pair Successful💥._*
+                 let SIGMA_MD_TEXT = `
+    *_❤️PINk_QUEEN_MD❤️ connected successful ✅💥._*
 ╔═════◇
 ║       『•••𖤍CHAMINDU𖤍•••』
-║ *Github:* _https://github.com/OfficialAnjanv2/MR-ANJAN_
-║ *Owner:* _https://wa.me/message/MM5LKUUQBHGBF1_
-║ *Note :*_Do not provide your SESSION_ID_
-╚════════════════════════╝
-image: {
-                url: "https://raw.githubusercontent.com/ransika2008/Img-2/refs/heads/main/High-resolution%203D%20render%2C%20silhouetted%20backlighting%2C%20soft%20dreamy%20atmosphere.%20Embossed%20gold%20text%20PINK%20QUEEN%20MD%20and%20CONNECTED%20SUCCESSFUL.%20Pastel%20rose%20pink%20background%2C%20golden%20crown%20and%20baroque%20flourishes.%20Hazy%2C%20soft%20light%2C%20light%20source%20behind%20subject.jpg",
-               `
+║ *owner number :* _Message 𝓨.𝓜 𝓒𝓗𝓜𝓘𝓝𝓓𝓤 on WhatsApp. https://wa.me/94783314361?text_PINk_QUEEN_MD-bot_
+║ *Owner channel:* _https://whatsapp.com/channel/0029Vb0rCUr72WU3uq0yMg42_
+║ *Note :*_Do not provide your SESSION_ID\n\n\nමෙක කටවත් ශෙයා කරන්න එපා🥰_
+╚════════════════════════╝`
  await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id,{text:SIGMA_MD_TEXT},{quoted:session})
  
 
@@ -89,38 +86,4 @@ image: {
     }
     return await SIGMA_MD_PAIR_CODE()
 });
-module.exports = routerabath");
-          }
-
-          await delay(100);
-          return await removeFile("./session");
-          process.exit(0);
-        } else if (
-          connection === "close" &&
-          lastDisconnect &&
-          lastDisconnect.error &&
-          lastDisconnect.error.output.statusCode !== 401
-        ) {
-          await delay(10000);
-          RobinPair();
-        }
-      });
-    } catch (err) {
-      exec("pm2 restart Robin-md");
-      console.log("service restarted");
-      RobinPair();
-      await removeFile("./session");
-      if (!res.headersSent) {
-        await res.send({ code: "Service Unavailable" });
-      }
-    }
-  }
-  return await RobinPair();
-});
-
-process.on("uncaughtException", function (err) {
-  console.log("Caught exception: " + err);
-  exec("pm2 restart Robin");
-});
-
-module.exports = router;
+module.exports = router
