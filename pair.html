@@ -144,7 +144,7 @@
           <p>
             <h3 class="centered-text">PINk QUEEN MD Link with Phone Number</h3>
             <br>
-            <h6>Enter your WhatsApp number without +.</h6>
+            <h6>🔢Enter your WhatsApp number without +.</h6>
             <div class="input-container">
               <input placeholder="94xxxxxxxxx" type="number" id="number" placeholder="Enter your WhatsApp number" name="">
               <button id="submit">Submit</button>
@@ -170,7 +170,7 @@
       let text = document.getElementById("copy").innerText;
       let obj = document.getElementById("copy");
       await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
-      obj.innerText = "COPIED";
+      obj.innerText = "✅COPIED";
       obj.style = "color:blue;font-weight:bold";
       obj.size = "5";
       setTimeout(() => {
@@ -203,7 +203,7 @@
         });
         c.type = "text";
         c.value = "+" + bb;
-        c.style = "color:black;font-size:20px";
+        c.style = "color:Magenta;font-size:20px";
         a.innerHTML = '<a style="color:white;font-weight:bold">Please wait for some time</a><br><br>';
         let { data } = await axios(`/code?number=${Maher_Zubair}`);
         let code = data.code || "Service Unavailable";
