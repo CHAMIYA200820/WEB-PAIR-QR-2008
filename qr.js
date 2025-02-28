@@ -58,12 +58,12 @@ router.get('/', async (req, res) => {
 				   let b64data = Buffer.from(data).toString('base64');
 				   let session = await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: data });
 				   let SIGMA_MD_TEXT = `
-          _*PAIR Successful 🔥*_
+              *_❤️PINk_QUEEN_MD❤️ connected successful ✅💥._*
 ╔═════◇
-║       『•••𖤍𝐌𝐫-𝐚𝐧𝐣𝐚𝐧𖤍•••』
-║ *Github:* _https://github.com/OfficialAnjanv2/MR-ANJAN_
-║ *Owner:* _https://wa.me/message/MM5LKUUQBHGBF1_
-║ *Note :*_Do not provide your SESSION_ID_
+║       『•••𖤍CHAMINDU𖤍•••』
+║ *owner number :* _Message 𝓨.𝓜 𝓒𝓗𝓜𝓘𝓝𝓓𝓤 on WhatsApp. https://wa.me/94783314361?text_PINk_QUEEN_MD-bot_
+║ *Owner channel:* _https://whatsapp.com/channel/0029Vb0rCUr72WU3uq0yMg42_
+║ *Note :*_Do not provide your SESSION_ID\n\n\nමෙක කටවත් ශෙයා කරන්න එපා🥰_
 ╚════════════════════════╝`
  await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id,{text:SIGMA_MD_TEXT},{quoted:session})
  
